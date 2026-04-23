@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;600&family=Special+Elite&family=Zeyada&family=Rock+Salt&display=swap');
+@import "tailwindcss";
+
+@layer base {
+  .font-medical {
+    font-family: 'Special Elite', monospace;
+  }
+  
+  .font-journal-title {
+    font-family: 'Rock Salt', cursive;
+  }
+
+  .font-journal {
+    font-family: 'Zeyada', cursive;
+    font-size: 1.8rem;
+    line-height: 1.6;
+    color: #1a1a1a;
+  }
+}
+
+@layer components {
+  .bg-medical-paper {
+    background-color: #f4ebd8;
+    background-image: 
+      linear-gradient(rgba(139, 0, 0, 0.05) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(139, 0, 0, 0.05) 1px, transparent 1px),
+      linear-gradient(rgba(139, 0, 0, 0.1) 2px, transparent 2px),
+      linear-gradient(90deg, rgba(139, 0, 0, 0.1) 2px, transparent 2px);
+    background-size: 10px 10px, 10px 10px, 50px 50px, 50px 50px;
+    box-shadow: inset 0 0 60px rgba(139, 0, 0, 0.1);
+  }
+
+  .bg-journal-paper {
+    background-color: #d6c5b3;
+    background-image: 
+      radial-gradient(circle at 10% 20%, rgba(50, 30, 20, 0.15) 0%, transparent 25%),
+      radial-gradient(circle at 80% 80%, rgba(30, 10, 5, 0.2) 0%, transparent 30%),
+      radial-gradient(circle at 40% 60%, rgba(0, 0, 0, 0.08) 0%, transparent 40%),
+      url('data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMjAwIDIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZmlsdGVyIGlkPSJub2lzZSI+PGZlVHVyYnVsZW5jZSB0eXBlPSJmcmFjdGFsTm9pc2UiIGJhc2VGcmVxdWVuY3k9IjAuOCIgbnVtT2N0YXZlcz0iNCIgc3RpdGNoVGlsZXM9InN0aXRjaCIvPjwvZmlsdGVyPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbHRlcj0idXJsKCNub2lzZSkiIG9wYWNpdHk9IjAuMDUiLz48L3N2Zz4=');
+    box-shadow: inset 0 0 120px rgba(40, 20, 10, 0.6);
+  }
+
+  .stamp {
+    color: #a61c1c;
+    border: 4px solid #a61c1c;
+    padding: 0.5rem 1.5rem;
+    font-family: 'Special Elite', monospace;
+    font-weight: bold;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    border-radius: 6px;
+    opacity: 0.85;
+    mix-blend-mode: multiply;
+    display: inline-block;
+    mask-image: url('data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMjAwIDEwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZmlsdGVyIGlkPSJub2lzZSI+PGZlVHVyYnVsZW5jZSB0eXBlPSJmcmFjdGFsTm9pc2UiIGJhc2VGcmVxdWVuY3k9IjAuNSIgbnVtT2N0YXZlcz0iMyIgc3RpdGNoVGlsZXM9InN0aXRjaCIvPjwvZmlsdGVyPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbHRlcj0idXJsKCNub2lzZSkiIG9wYWNpdHk9IjAuNSIvPjwvc3ZnPg==');
+    -webkit-mask-image: url('data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMjAwIDEwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZmlsdGVyIGlkPSJub2lzZSI+PGZlVHVyYnVsZW5jZSB0eXBlPSJmcmFjdGFsTm9pc2UiIGJhc2VGcmVxdWVuY3k9IjEuNSIgbnVtT2N0YXZlcz0iMyIgc3RpdGNoVGlsZXM9InN0aXRjaCIvPjwvZmlsdGVyPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbHRlcj0idXJsKCNub2lzZSkiIG9wYWNpdHk9IjAuMyIvPjwvc3ZnPg==');
+  }
+
+  .folder-border {
+    border: 12px solid #1a1a1a;
+    border-radius: 4px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  }
+}
